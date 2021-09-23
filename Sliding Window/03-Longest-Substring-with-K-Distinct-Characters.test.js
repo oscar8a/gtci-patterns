@@ -45,9 +45,18 @@ describe("Find the length of the longest substring in it with no more than K dis
   // Input: String="cbbebi", K=3 
   // Output: 5
   // Explanation: The longest substring with no more than '3' distinct characters are "cbbeb" & "bbebi"
-  it("K = 3 and string = 'araaci'", () => {
+  it("K = 3 and string = 'cbbebi'", () => {
     expect(
       longest_substring_with_k_distinct("cbbebi", 3)
     ).toEqual(5)
+  })
+
+  // Input: String="cbbebi", K=10
+  // Output: 6
+  // Explanation: The longest substring with no more than '10' distinct characters is "cbbebi"
+  it("K = 10 and string = 'cbbebi'", () => {
+    expect(
+      longest_substring_with_k_distinct("cbbebi", 10)
+    ).toEqual(6)
   })
 })
